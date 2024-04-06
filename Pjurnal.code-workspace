@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "D:/Pjurnal"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pdaftar"
+	}
+}
