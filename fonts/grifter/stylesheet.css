@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'GRIFTER';
+    src: url('GRIFTERBold.woff2') format('woff2'),
+        url('GRIFTERBold.woff') format('woff'),
+        url('GRIFTERBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
