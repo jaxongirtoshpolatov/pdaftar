@@ -556,7 +556,6 @@ img {
   color: #563acc;
 }
 
-
 .cards__box{
   width: 275px;
   height: auto;
@@ -603,6 +602,71 @@ img {
 .project__works {
   text-align: center;
 }
+.debt{
+  margin-top: 5rem;
+}
+.debt__title{
+  text-align: center;
+  font-family: "Nexa";
+  width: 734px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 54px;
+  margin-bottom: 25px;
+  color: #000;
+}
+.debt__h3{
+  font-family: "Nexa";
+  font-weight: normal;
+  font-size: 42px;
+  margin-bottom: 24px;
+  color: #000;
+}
+.debt__p{
+  font-family: "Nexa";
+  font-weight: normal;
+  font-size: 18px;
+  color: #000;
+}
+.debt__box{
+  width: 100%;
+  position: relative;
+  padding: 194px 62px;
+  margin: 5rem 0;
+  background-color: #f8e7df;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.debt__image>img{
+  position: absolute;
+  top: -5rem;
+  right: 3rem;
+}
+@media screen and (max-width: 1200px){
+  .debt__image>img{
+    position: static;
+    width: 17rem;
+  }
+  .debt__image{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  .debt__title{
+    width: auto;
+  }
+  .debt__box{
+    padding: 8rem 2rem;
+    text-align: center;
+  }
+  .debt__title{
+    font-size: 52px;
+  }
+}
+
 
 @media screen and (max-width: 960px) {
   .intro__title {
@@ -623,6 +687,18 @@ img {
   .cards__title {
     font-size: 2.9rem;
   }
+  .debt__image>img{
+    width: 15rem;
+  }
+  .debt__h3{
+    font-size: 40px;
+  }
+  .debt__title{
+    font-size: 50px;
+  }
+  .debt__box{
+    padding: 6rem 2rem;
+  }
 }
 @media screen and (max-width: 720px) {
   .intro__title {
@@ -642,6 +718,21 @@ img {
   }
   .cards__title{
     font-size: 2.85rem;
+  }
+  .debt__image>img{
+    width: 14rem;
+  }
+  .debt__h3{
+    font-size: 38px;
+  }
+  .debt__p{
+    font-size: 16px;
+  }
+  .debt__title{
+    font-size: 48px;
+  }
+  .debt__box{
+    padding: 5rem 2rem;
   }
 }
 
@@ -665,13 +756,28 @@ img {
     width: 7rem;
   }
   .phone {
-    margin-top: 32px;
+    margin-top: 36px;
   }
   .cards__text{
     width: 17.5rem;
   }
   .cards__title{
     font-size: 2.5rem;
+  }
+  .debt__image>img{
+    width: 12rem;
+  }
+  .debt__h3{
+    font-size: 28px;
+  }
+  .debt__p{
+    font-size: 14px;
+  }
+  .debt__title{
+    font-size: 46px;
+  }
+  .debt__box{
+    padding: 4rem 1.5rem;
   }
 }
 @media screen and (max-width: 360px) {
@@ -692,5 +798,14 @@ img {
   }
   .cards__title{
     font-size: 2rem;
+  }
+  .debt__image>img{
+    width: 8rem;
+  }
+  .debt__h3{
+    font-size: 30px;
+  }
+  .debt__title{
+    font-size: 40px;
   }
 }
