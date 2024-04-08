@@ -615,20 +615,20 @@ img {
   margin-bottom: 25px;
   color: #000;
 }
-.debt__h3{
+.payment-h3{
   font-family: "Nexa";
   font-weight: normal;
   font-size: 42px;
   margin-bottom: 24px;
   color: #000;
 }
-.debt__p{
+.payment-p{
   font-family: "Nexa";
   font-weight: normal;
   font-size: 18px;
   color: #000;
 }
-.debt__box{
+.payment-box{
   width: 100%;
   position: relative;
   padding: 194px 62px;
@@ -645,12 +645,48 @@ img {
   top: -5rem;
   right: 3rem;
 }
+.history__image-first{
+  position: absolute;
+  top: -4rem;
+  left: 3rem;
+}
+.history__image-secondary{
+  position: relative;
+  z-index: 2;
+  left: 11rem;
+}
+.history__box{
+  background-color: #eef2fb;
+}
+.history{
+  margin-top: 15rem;
+}
+.offline__image-first, .offline__image-secondary{
+  position: absolute;
+}
+.offline__image-first{
+  top: -4rem;
+  right: -13rem;
+}
+.offline__image-secondary{
+  right: 1rem;
+  top: 7rem;
+}
+.offline__image-secondary img{
+  width: 20rem;
+}
+.offline{
+  margin-top: 15rem;
+}
+.offline__box{
+  background-color: #e1f5eb;
+}
 @media screen and (max-width: 1200px){
   .debt__image>img{
     position: static;
     width: 17rem;
   }
-  .debt__image{
+  .debt__image, .offline__image{
     display: flex;
     justify-content: center;
     padding-top: 2rem;
@@ -658,16 +694,51 @@ img {
   .debt__title{
     width: auto;
   }
-  .debt__box{
+  .payment-box{
     padding: 8rem 2rem;
     text-align: center;
   }
   .debt__title{
     font-size: 52px;
+  } 
+  .history__image{
+    display: flex;
   }
+  .history__box{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .offline__box{
+    display: flex;
+    flex-direction: column;
+  }
+  .history__image-first, .offline__image-first{
+    display: flex;
+    padding: 0;
+    justify-content: end;
+    position: relative;
+  }
+  .history__image-secondary{
+    position: relative;
+    left: -5rem;
+    top: 14rem;
+  }
+  .offline__image-secondary{
+    position: relative;
+    left: -17rem;
+    top: 10rem;
+  }
+  .history__image-secondary img, .offline__image-secondary img {
+    width: 18rem;        
+  }
+  .history__image-first img, .offline__image-first img{
+    width: 17rem;
+    padding-top: 5rem;
+  }
+  .debt, .history, .offline{
+    margin: 12rem 0;
+  } 
 }
-
-
 @media screen and (max-width: 960px) {
   .intro__title {
     font-size: 40px;
@@ -690,15 +761,39 @@ img {
   .debt__image>img{
     width: 15rem;
   }
-  .debt__h3{
+  .payment-h3{
     font-size: 40px;
   }
   .debt__title{
     font-size: 50px;
   }
-  .debt__box{
+  .payment-box{
     padding: 6rem 2rem;
   }
+  .history__image-secondary img, .offline__image-secondary img{
+    width: 16rem;        
+  }
+  .history__image-first img, .offline__image-first img{
+    width: 15rem;
+    padding-top: 5rem;
+  }
+  .history__image-secondary, .offline__image-secondary{
+    position: relative;
+    left: -5rem;
+    top: 13rem;
+  }
+  .history__image-secondary{
+    position: relative;
+    top: 14rem;
+  }
+  .offline__image-secondary{
+    position: relative;
+    left: -14rem;
+    top: 10rem;
+  }
+  .debt, .history, .offline{
+    margin: 10rem 0;
+  } 
 }
 @media screen and (max-width: 720px) {
   .intro__title {
@@ -722,20 +817,39 @@ img {
   .debt__image>img{
     width: 14rem;
   }
-  .debt__h3{
+  .payment-h3{
     font-size: 38px;
   }
-  .debt__p{
+  .payment-p{
     font-size: 16px;
   }
   .debt__title{
     font-size: 48px;
   }
-  .debt__box{
+  .payment-box{
     padding: 5rem 2rem;
   }
+  .history__image-secondary img, .offline__image-secondary img{
+    width: 13rem;        
+  }
+  .history__image-first img, .offline__image-first img{
+    width: 14rem;
+    padding-top: 5rem;
+  }
+  .history__image-secondary{
+    position: relative;
+    left: -3rem;
+    top: 11rem;
+  }
+  .offline__image-secondary{
+    position: relative;
+    left: -10.5rem;
+    top: 10rem;
+  }
+  .debt, .history, .offline{
+    margin: 9rem 0;
+  } 
 }
-
 @media screen and (max-width: 576px) {
   .intro__title {
     font-size: 27px;
@@ -767,18 +881,42 @@ img {
   .debt__image>img{
     width: 12rem;
   }
-  .debt__h3{
+  .payment-h3{
     font-size: 28px;
   }
-  .debt__p{
+  .payment-p{
     font-size: 14px;
   }
   .debt__title{
     font-size: 46px;
   }
-  .debt__box{
+  .payment-box{
     padding: 4rem 1.5rem;
   }
+  .history__image-secondary img, .offline__image-secondary img{
+    width: 10.5rem;        
+  }
+  .history__image-first img, .offline__image-first img{
+    width: 12rem;
+    padding-top: 5rem;
+  }
+  .history__image-secondary{
+    position: relative;
+    left: -2rem;
+    top: 10rem;
+  }
+  .offline__image-secondary{
+    position: relative;
+    left: -9.5rem;
+    top: 7rem;
+  }
+  .offline__image-first{
+    top: -4rem;
+    right: -10rem;
+  }
+  .debt, .history, .offline{
+    margin: 8rem 0;
+  } 
 }
 @media screen and (max-width: 360px) {
   .intro__title {
@@ -802,10 +940,33 @@ img {
   .debt__image>img{
     width: 8rem;
   }
-  .debt__h3{
+  .payment-h3{
     font-size: 30px;
   }
   .debt__title{
     font-size: 40px;
   }
+  .history__image-secondary img, .offline__image-secondary img{
+    width: 7rem;        
+  }
+  .history__image-first img, .offline__image-first img{
+    width: 8rem;
+  }
+  .history__image-secondary{
+    position: relative;
+    left: -1.2rem;
+    top: 7rem;
+  }
+  .offline__image-secondary{
+    position: relative;
+    left: -5rem;
+    top: 5.5rem;
+  }
+  .offline__image-first{
+    top: -4rem;
+    right: -8rem;
+  }
+  .debt, .history, .offline{
+    margin: 6rem 0;
+  } 
 }
