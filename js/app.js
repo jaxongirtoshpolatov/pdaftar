@@ -17,3 +17,22 @@ navbarLink.forEach((item) => {
     })
 
 })
+
+// prices section js code
+let selection, buyValue, statusBusiness;
+selection = document.querySelector(".price__selection");
+buyValue = document.querySelectorAll(".buy__selection__value");
+statusBusiness = document.querySelector('.status__business')
+selection.addEventListener("click", () => {
+  selection.classList.toggle("selection__active");
+
+  buyValue.forEach((item) => {
+    if (selection.classList.contains("selection__active")) {
+      item.textContent = "Yil";
+      statusBusiness.textContent = '$10'
+    } else {
+      item.textContent = "Oy";
+      statusBusiness.textContent = '$1'
+    }
+  });
+});
