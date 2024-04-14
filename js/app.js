@@ -36,3 +36,15 @@ selection.addEventListener("click", () => {
     }
   });
 });
+
+// navbar sticky
+let navbar = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+  let scrollValue = scrollY;
+  if (scrollValue > 0){
+    navbar.classList.add('sticky')
+  }else {
+    navbar.classList.remove('sticky');
+  }
+})
