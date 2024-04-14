@@ -224,11 +224,10 @@ header.sticky
 
   .navbar__menu_box.navbar__menu__box_active {
     visibility: visible;
-    height: 100vh;
+    height: calc(100vh + 48px);
     opacity: 1;
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
-    top: -50px;
   }
 
   .navbar__menu {
@@ -1952,5 +1951,75 @@ header.sticky
 
 /* ? kss accordion */
 
+/* ? kss mediaquery */
+
+@media screen and (max-width: 894px) {
+  .kss-title
+  {
+    font-size: 34px;
+  }
+  .kss-subtitle
+  {
+    font-size: 13px;
+  }
+  .kss-descr
+  {
+    font-size: 15px;
+  }
+
+  .kss-accordion
+  {
+    width: 100%;
+  }
+
+  .accordion-item
+  {
+    width: 100%;
+  }
+}
+/* 800px */
+@media screen and (max-width: 800px) {
+  .kss-subtitle
+  {
+    font-size: 12px;
+  }
+  .kss-title
+  {
+    font-size: 31px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .kss-subtitle
+  {
+    font-size: 11px;
+  }
+  .kss-title
+  {
+    font-size: 28px;
+  }
+  .kss-descr
+  {
+    font-size: 14px;
+  }
+
+  @media  screen and (max-width: 650px) {
+    .kss-subtitle
+  {
+    font-size: 10px;
+  }
+  .kss-title
+  {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .kss-descr
+  {
+    font-size: 14px;
+  }
+  }
+}
+
+/* ? kss mediaquery */
 
 /* ! KSS end*/
