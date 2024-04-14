@@ -824,6 +824,11 @@ header.sticky
   color: #fff;
 }
 
+.buy__btn:hover
+{
+  background-color: #563acc;
+}
+
 .cards__card:hover .buy__selection__value {
   box-shadow: 0px 5px 10px rgba(225, 225, 225, 0.1);
 }
@@ -910,6 +915,18 @@ header.sticky
   margin-bottom: 12px;
 }
 
+.younger .card__body__menu_item:nth-child(5)
+{
+  text-decoration: line-through;
+  color: gray;
+}
+
+.younger .card__body__menu_item:nth-child(4)
+{
+  text-decoration: line-through;
+  color: gray;
+}
+
 .card__body__menu_item:last-child {
   margin-bottom: 0;
 }
@@ -929,18 +946,7 @@ header.sticky
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   margin-top: 48px;
-}
-
-@keyframes width {
-  0% {
-    width: 25px;
-  }
-  50% {
-    width: 30px;
-  }
-  100% {
-    width: 25px;
-  }
+  transition: background-color 0.5s;
 }
 
 @media screen and (max-width: 1400px) {
