@@ -40,10 +40,26 @@ img {
 }
 
 /* header */
+header
+{
+  position: relative;
+  top: 48px;
+  transition: 0.5s;
+}
 
 .header__navbar {
   position: relative;
-  padding-top: 48px;
+}
+
+header.sticky
+{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 998;
+  padding: 16px 0;
+  box-shadow: 0 0 4px #000;
+  background-color: #fff;
 }
 
 .nav__logo {
