@@ -39,6 +39,28 @@ img {
   font-weight: 700;
 }
 
+/* ! subtitle */
+.subtitle
+{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #6364FF;
+  text-align: center;
+}
+/* ! subtitle */
+/* ! title */
+.title
+{
+  font-family: "GRIFTER";
+  font-weight: bold;
+  font-size: 40px;
+  color: #1A1A1A;
+  text-align: center;
+}
+/* ! title */
+
 /* header */
 header
 {
@@ -185,7 +207,7 @@ header.sticky
     flex-direction: column;
     visibility: hidden;
     position: absolute;
-    top: 0;
+    top: -50px;
     padding-top: 48px;
     left: 50%;
     transform: translateX(-50%);
@@ -206,6 +228,7 @@ header.sticky
     opacity: 1;
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
+    top: -50px;
   }
 
   .navbar__menu {
@@ -1856,3 +1879,72 @@ header.sticky
     font-size: 10px;
   }
 }
+
+/* ! KSS  start*/
+.kks
+{
+  margin: 114px 0 117px 0;
+}
+/* ? kss nav */
+.kss-title
+{
+  margin: 18px auto 15px;
+}
+
+.kss-descr
+{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+/* ? kss nav */
+
+/* ? kss accordion */
+
+.kss-accordion
+{
+  width: 719px;
+  margin: 0 auto;
+  margin-top: 92px;
+}
+
+.accordion-item
+{
+  border: none;
+  border-bottom: 1px solid #949494;
+  border-radius: 0px;
+  margin-bottom: 32px;
+}
+
+.accordion-item:last-child
+{
+  border-bottom: none;
+}
+
+.accordion-button
+{
+  font-family: "GRIFTER";
+  font-size: 20px;
+  font-weight: bold;
+  color: #1A1A1A;
+  padding: 0;
+  padding-bottom: 32px;
+}
+
+.accordion-button:focus
+{
+  box-shadow: none;
+  background-color: transparent;
+  color: #000;
+}
+
+.accordion-body
+{
+  padding: 0px 0 38px 0;
+}
+
+/* ? kss accordion */
+
+
+/* ! KSS end*/
