@@ -1154,296 +1154,6 @@ header.sticky
   width: 3rem;
   max-height: 3rem;
 }
-
-@media screen and (max-width: 1200px){
-  
-  .debt__image>img{
-    position: static;
-    width: 17rem;
-  }
-  .debt__image, .offline__image{
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-  }
-  .debt__title{
-    width: auto;
-  }
-  .payment-box{
-    margin-top: 10rem;
-    padding: 8rem 2rem;
-    text-align: center;
-  }
-  .debt__title{
-    font-size: 52px;
-  } 
-  .history__image{
-    display: flex;
-  }
-  .history__box{
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .offline__box{
-    display: flex;
-    flex-direction: column;
-  }
-  .history__image-first, .offline__image-first{
-    display: flex;
-    padding: 0;
-    justify-content: end;
-    position: relative;
-  }
-  .history__image-secondary{
-    position: relative;
-    left: -5rem;
-    top: 14rem;
-  }
-  .offline__image-secondary{
-    position: relative;
-    left: -17rem;
-    top: 10rem;
-  }
-  .history__image-secondary img, .offline__image-secondary img {
-    width: 18rem;        
-  }
-  .history__image-first img, .offline__image-first img{
-    width: 17rem;
-    padding-top: 5rem;
-  }
-  .offline, .history{
-    margin-top: 16rem;
-  }
-  .debt{
-    margin-top: 16rem;
-  }
-  .payments__data{
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 960px) {
-  .intro__title {
-    font-size: 40px;
-  }
-  .intro {
-    margin: 10rem 1rem;
-  }
-  .image-phone {
-    width: 12rem;
-  }
-  .phone {
-    margin-top: 8rem;
-  }
-  .cards__text {
-    width: 17.5rem;
-  }
-  .cards__title {
-    font-size: 2.9rem;
-  }
-  .debt__image>img{
-    width: 15rem;
-  }
-  .payment-h3{
-    font-size: 40px;
-  }
-  .debt__title{
-    font-size: 50px;
-    margin-top: 5rem
-  }
-  .payment-box{
-    padding: 6rem 2rem;
-  }
-  .history__image-secondary img, .offline__image-secondary img{
-    width: 16rem;        
-  }
-  .history__image-first img, .offline__image-first img{
-    width: 15rem;
-    padding-top: 5rem;
-  }
-  .history__image-secondary, .offline__image-secondary{
-    position: relative;
-    left: -5rem;
-    top: 13rem;
-  }
-  .history__image-secondary{
-    position: relative;
-    top: 14rem;
-  }
-  .offline__image-secondary{
-    position: relative;
-    left: -14rem;
-    top: 10rem;
-  } 
-}
-@media screen and (max-width: 720px) {
-  .intro__title {
-    font-size: 36px;
-  }
-  .image-phone {
-    width: 10rem;
-  }
-  .phone__image {
-    gap: 12px;
-  }
-  .phone {
-    margin-top: 5rem;
-  }
-  .cards__text{
-    width: 17.5rem;
-  }
-  .cards__title{
-    font-size: 2.85rem;
-  }
-  .debt__image>img{
-    width: 14rem;
-  }
-  .payment-h3{
-    font-size: 38px;
-  }
-  .payment-p{
-    font-size: 16px;
-  }
-  .debt__title{
-    font-size: 48px;
-  }
-  .payment-box{
-    padding: 5rem 2rem;
-  }
-  .history__image-secondary img, .offline__image-secondary img{
-    width: 13rem;        
-  }
-  .history__image-first img, .offline__image-first img{
-    width: 14rem;
-    padding-top: 5rem;
-  }
-  .history__image-secondary{
-    position: relative;
-    left: -3rem;
-    top: 11rem;
-  }
-  .offline__image-secondary{
-    position: relative;
-    left: -10.5rem;
-    top: 10rem;
-  }
-}
-@media screen and (max-width: 576px) {
-  .intro__title {
-    font-size: 27px;
-  }
-  .intro__paragraph {
-    font-size: 0.8rem;
-  }
-  .box-input {
-    border-style: none;
-    width: 20rem;
-  }
-  .intro__input {
-    outline-style: auto;
-    outline-color: #949494;
-    margin: 1rem 0;
-  }
-  .image-phone {
-    width: 7rem;
-  }
-  .phone {
-    margin-top: 36px;
-  }
-  .cards__text{
-    width: 17.5rem;
-  }
-  .cards__title{
-    font-size: 2.5rem;
-  }
-  .debt__image>img{
-    width: 12rem;
-  }
-  .payment-h3{
-    font-size: 28px;
-  }
-  .payment-p{
-    font-size: 14px;
-  }
-  .debt__title{
-    font-size: 46px;
-  }
-  .payment-box{
-    padding: 4rem 1.5rem;
-  }
-  .history__image-secondary img, .offline__image-secondary img{
-    width: 10.5rem;        
-  }
-  .history__image-first img, .offline__image-first img{
-    width: 12rem;
-    padding-top: 5rem;
-  }
-  .history__image-secondary{
-    position: relative;
-    left: -2rem;
-    top: 10rem;
-  }
-  .offline__image-secondary{
-    position: relative;
-    left: -9.5rem;
-    top: 7rem;
-  }
-  .offline__image-first{
-    top: -4rem;
-    right: -10rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .intro__title {
-    font-size: 16px;
-  }
-  .box-input {
-    width: 12rem;
-  }
-  .image-phone {
-    width: 6rem;
-  }
-  .phone {
-    margin-top: 10px;
-  }
-  .cards__text{
-    width: 17.5rem;
-  }
-  .cards__title{
-    font-size: 2rem;
-  }
-  .debt__image>img{
-    width: 8rem;
-  }
-  .payment-h3{
-    font-size: 30px;
-  }
-  .debt__title{
-    font-size: 40px;
-  }
-  .history__image-secondary img, .offline__image-secondary img{
-    width: 7rem;        
-  }
-  .history__image-first img, .offline__image-first img{
-    width: 8rem;
-  }
-  .history__image-secondary{
-    position: relative;
-    left: -1.2rem;
-    top: 7rem;
-  }
-  .offline__image-secondary{
-    position: relative;
-    left: -5rem;
-    top: 5.5rem;
-  }
-  .offline__image-first{
-    top: -4rem;
-    right: -8rem;
-  }
-}
-
-
 .payments{
   padding-bottom: 127px;
   margin-top: 10rem;
@@ -2254,3 +1964,388 @@ header.sticky
   }
 }
 /* ! Download end */
+
+.carousel__icon{
+  background-color: #fff;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin: 12rem 1rem;
+  text-align: center;
+  
+}
+.carousel__text{
+  padding: 94px;
+  background-color: #eae7ff;
+  border-radius: 3rem 3rem 0 0 ;
+  border: solid 1px #949494;
+ 
+}
+.carousel__p{
+  font-size: 24px;
+  font-weight: 500;
+  color: #3A3A3A;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+.carousel__user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5dbfb;
+  padding: 30px;
+  border-radius: 0 0 3rem 3rem;
+  border: solid 1px #949494;
+  
+}
+.carousel__user-name{
+  padding: 0;
+}
+.carousel__img-box{
+  padding: 0;
+}
+.carousel__title-p{
+  font-weight: bold;
+    color: #6364FF;
+    font-size: 1rem;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+.carousel__title-h1{
+  font-family: "GRIFTER";
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #1A1A1A;
+  margin: 10px auto 26px;
+}
+@media screen and (max-width: 1200px){
+  
+  .debt__image>img{
+    position: static;
+    width: 17rem;
+  }
+  .debt__image, .offline__image{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  .debt__title{
+    width: auto;
+  }
+  .payment-box{
+    margin-top: 10rem;
+    padding: 8rem 2rem;
+    text-align: center;
+  }
+  .debt__title{
+    font-size: 52px;
+  } 
+  .history__image{
+    display: flex;
+  }
+  .history__box{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .offline__box{
+    display: flex;
+    flex-direction: column;
+  }
+  .history__image-first, .offline__image-first{
+    display: flex;
+    padding: 0;
+    justify-content: end;
+    position: relative;
+  }
+  .history__image-secondary{
+    position: relative;
+    left: -5rem;
+    top: 14rem;
+  }
+  .offline__image-secondary{
+    position: relative;
+    left: -17rem;
+    top: 10rem;
+  }
+  .history__image-secondary img, .offline__image-secondary img {
+    width: 18rem;        
+  }
+  .history__image-first img, .offline__image-first img{
+    width: 17rem;
+    padding-top: 5rem;
+  }
+  .offline, .history{
+    margin-top: 16rem;
+  }
+  .debt{
+    margin-top: 16rem;
+  }
+  .payments__data{
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel__p{
+    font-size: 1.35rem;
+  }
+  .carousel__tex{
+    padding: 5rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .intro__title {
+    font-size: 40px;
+  }
+  .intro {
+    margin: 10rem 1rem;
+  }
+  .image-phone {
+    width: 12rem;
+  }
+  .phone {
+    margin-top: 8rem;
+  }
+  .cards__text {
+    width: 17.5rem;
+  }
+  .cards__title {
+    font-size: 2.9rem;
+  }
+  .debt__image>img{
+    width: 15rem;
+  }
+  .payment-h3{
+    font-size: 40px;
+  }
+  .debt__title{
+    font-size: 50px;
+    margin-top: 5rem
+  }
+  .payment-box{
+    padding: 6rem 2rem;
+  }
+  .history__image-secondary img, .offline__image-secondary img{
+    width: 16rem;        
+  }
+  .history__image-first img, .offline__image-first img{
+    width: 15rem;
+    padding-top: 5rem;
+  }
+  .history__image-secondary, .offline__image-secondary{
+    position: relative;
+    left: -5rem;
+    top: 13rem;
+  }
+  .history__image-secondary{
+    position: relative;
+    top: 14rem;
+  }
+  .offline__image-secondary{
+    position: relative;
+    left: -14rem;
+    top: 10rem;
+  } 
+  .carousel__p{
+    font-size: 1.3rem;
+  }
+  .carousel__tex{
+    padding: 5rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .intro__title {
+    font-size: 36px;
+  }
+  .image-phone {
+    width: 10rem;
+  }
+  .phone__image {
+    gap: 12px;
+  }
+  .phone {
+    margin-top: 5rem;
+  }
+  .cards__text{
+    width: 17.5rem;
+  }
+  .cards__title{
+    font-size: 2.85rem;
+  }
+  .debt__image>img{
+    width: 14rem;
+  }
+  .payment-h3{
+    font-size: 38px;
+  }
+  .payment-p{
+    font-size: 16px;
+  }
+  .debt__title{
+    font-size: 48px;
+  }
+  .payment-box{
+    padding: 5rem 2rem;
+  }
+  .history__image-secondary img, .offline__image-secondary img{
+    width: 13rem;        
+  }
+  .history__image-first img, .offline__image-first img{
+    width: 14rem;
+    padding-top: 5rem;
+  }
+  .history__image-secondary{
+    position: relative;
+    left: -3rem;
+    top: 11rem;
+  }
+  .offline__image-secondary{
+    position: relative;
+    left: -10.5rem;
+    top: 10rem;
+  }
+  .carousel__p{
+    font-size: 1.2rem;
+  }
+  .carousel__tex{
+    padding: 3.5rem;
+  }
+  .carousel__title-p{
+    font-size: 0.7rem;
+  }
+  .carousel__title-h1{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .intro__title {
+    font-size: 27px;
+  }
+  .intro__paragraph {
+    font-size: 0.8rem;
+  }
+  .box-input {
+    border-style: none;
+    width: 20rem;
+  }
+  .intro__input {
+    outline-style: auto;
+    outline-color: #949494;
+    margin: 1rem 0;
+  }
+  .image-phone {
+    width: 7rem;
+  }
+  .phone {
+    margin-top: 36px;
+  }
+  .cards__text{
+    width: 17.5rem;
+  }
+  .cards__title{
+    font-size: 2.5rem;
+  }
+  .debt__image>img{
+    width: 12rem;
+  }
+  .payment-h3{
+    font-size: 28px;
+  }
+  .payment-p{
+    font-size: 14px;
+  }
+  .debt__title{
+    font-size: 46px;
+  }
+  .payment-box{
+    padding: 4rem 1.5rem;
+  }
+  .history__image-secondary img, .offline__image-secondary img{
+    width: 10.5rem;        
+  }
+  .history__image-first img, .offline__image-first img{
+    width: 12rem;
+    padding-top: 5rem;
+  }
+  .history__image-secondary{
+    position: relative;
+    left: -2rem;
+    top: 10rem;
+  }
+  .offline__image-secondary{
+    position: relative;
+    left: -9.5rem;
+    top: 7rem;
+  }
+  .offline__image-first{
+    top: -4rem;
+    right: -10rem;
+  }
+  .carousel__p{
+    font-size: 1rem;
+  }
+  .carousel__tex{
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .intro__title {
+    font-size: 16px;
+  }
+  .box-input {
+    width: 12rem;
+  }
+  .image-phone {
+    width: 6rem;
+  }
+  .phone {
+    margin-top: 10px;
+  }
+  .cards__text{
+    width: 17.5rem;
+  }
+  .cards__title{
+    font-size: 2rem;
+  }
+  .debt__image>img{
+    width: 8rem;
+  }
+  .payment-h3{
+    font-size: 30px;
+  }
+  .debt__title{
+    font-size: 40px;
+  }
+  .history__image-secondary img, .offline__image-secondary img{
+    width: 7rem;        
+  }
+  .history__image-first img, .offline__image-first img{
+    width: 8rem;
+  }
+  .history__image-secondary{
+    position: relative;
+    left: -1.2rem;
+    top: 7rem;
+  }
+  .offline__image-secondary{
+    position: relative;
+    left: -5rem;
+    top: 5.5rem;
+  }
+  .offline__image-first{
+    top: -4rem;
+    right: -8rem;
+  }
+  .carousel__p{
+    font-size: 0.9rem;
+  }
+  .carousel__tex{
+    padding: 0;
+  }
+  .carousel-item{
+    padding: 0;
+  }
+  .carousel__all{
+    padding: 0;
+    margin: 0;
+  }
+}
