@@ -2351,7 +2351,7 @@ header.sticky
 }
 
 /* ! footer */
-.container
+footer .container
 {
   background-color: #f9f9f9;  
   padding: 70px 0;
