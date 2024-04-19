@@ -48,3 +48,10 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('sticky');
   }
 })
+
+// footer author year script
+const date = new Date();;
+const yearTag = document.querySelector('#year');
+
+let year = date.getFullYear();
+yearTag.textContent = year;
