@@ -2410,7 +2410,7 @@ header.sticky
   -o-transition: all 0.25s linear;
 }
 
-form button
+.input-box button
 {
   position: absolute;
     top: 4px;
