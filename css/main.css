@@ -2351,9 +2351,13 @@ header.sticky
 }
 
 /* ! footer */
-footer .container
+footer 
 {
   background-color: #f9f9f9;  
+
+}
+footer .container
+{
   padding: 70px 0;
   text-align: center;
 }
@@ -2492,7 +2496,25 @@ footer .container
   text-decoration: none;
 }
 
-
+/* up icon */
+.up-icon a
+{
+  position: fixed;
+  width: 46px;
+  height: 46px;
+  background: #563acc;
+  right: 26px;
+  bottom: 60px;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  opacity: 0;
+  border-radius: 5px;
+  display: flex;
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 /* ? mediaquiery */
 @media screen and (max-width: 1142px) {
   .input-box 
