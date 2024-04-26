@@ -1,11 +1,26 @@
-let barsBtn, navbarMenuBox, navbarLink;
+let barsBtn, navbarMenuBox, navbarLink, header;
 barsBtn = document.querySelector(".navbar__bars");
 navbarMenuBox = document.querySelector(".navbar__menu_box");
 navbarLink = document.querySelectorAll(".navbar__link");
+header = document.querySelector(".header__container");
+
+// scroll freeze
+const scrollFreeze = (status) => {
+  if (status === true) {
+    document.body.style.overflowY = "hidden";
+  } else if (status === false) {
+    document.body.style.overflowY = "auto";
+  }
+};
 
 barsBtn.addEventListener("click", () => {
   barsBtn.classList.toggle("navbar__bars_active");
   navbarMenuBox.classList.toggle("navbar__menu__box_active");
+  header.classList.toggle("active");
+  scrollFreeze(true);
+  if (!header.classList.contains("active")) {
+    scrollFreeze(false);
+  }
 });
 
 navbarLink.forEach((item) => {
@@ -26,7 +41,7 @@ selection.addEventListener("click", () => {
   selection.classList.toggle("selection__active");
 
   let month = 2,
-      year = month*10;
+    year = month * 10;
   buyValue.forEach((item) => {
     if (selection.classList.contains("selection__active")) {
       item.textContent = "Yil";
@@ -66,10 +81,9 @@ yearTag.textContent = year;
 // input mask
 const telInput = document.querySelectorAll("#telInput");
 
-
 telInput.forEach((item) => {
   const maskOptions = {
-    mask: '+{998}(00) 000-00-00'
+    mask: "+{998}(00) 000-00-00",
   };
   const mask = IMask(item, maskOptions);
-})
+});

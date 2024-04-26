@@ -80,6 +80,10 @@ header.sticky {
   background-color: #fff;
 }
 
+.header__container.active .nav__logo svg path
+{
+  fill: #fff;
+}
 .nav__logo {
   position: relative;
   z-index: 100;
@@ -775,7 +779,7 @@ header.sticky {
 }
 
 .price__selection.selection__active::after {
-  left: calc(100% - 24px);
+  left: calc(100% - 28px);
   animation: width 0.3s linear alternate;
 }
 
@@ -1026,7 +1030,13 @@ header.sticky {
   {
     width: 20px;
     height: 20px;
+    
   }
+  .price__selection.selection__active::after
+  {
+    left: calc(100% - 23px);
+  }
+
 
   .buy__btn
   {
@@ -1083,10 +1093,20 @@ header.sticky {
     margin-right: 24px;
   }
 
+  .tariffs__container 
+  {
+    padding: 45px 32px;
+  }
+
   .buy__btn
   {
     font-size: 14px;
-    padding: 14px 24px;
+    padding: 12px 30px;
+  }
+
+  .buy__selection__value
+  {
+    font-size: 14px;
   }
 }
 
@@ -2522,6 +2542,7 @@ footer .container {
   justify-content: center;
   padding: 0;
   gap: 40px;
+  margin: 0;
 }
 
 .social a {
