@@ -116,7 +116,7 @@
             </div>
             <div class="box-input py-1 px-3">
               <form class="intro__form row" >
-                <input class="intro__input col-sm-7" type="tel" name="header-phone" placeholder="+998-99-123-45-67" autocomplete="off"/>
+                <input class="intro__input col-sm-7" type="tel" id="telInput" name="header-phone" placeholder="+998-99-123-45-67" autocomplete="off"/>
                 <button class="intro__btn text-white col-sm-5" type="submit" id="download-form--btn">Appni yubor</button>
               </form>
             </div>
@@ -842,7 +842,7 @@
             <h2 class="title">Dastur yangiliklariga a'zo bo'ling</h2>
             <form>
               <div class="input-box">
-                  <input type="text" placeholder="+998(99) 123-45-67" autocomplete="off" pattern="^\+998\(\d{2}\)\s\d{3}-\d{2}-\d{2}$">
+                  <input type="tel" id="telInput" placeholder="+998(99) 123-45-67" autocomplete="off" pattern="^\+998\(\d{2}\)\s\d{3}-\d{2}-\d{2}$">
                   <button>Obuna bo'laman</button>
               </div>
             </form>
@@ -923,6 +923,9 @@
       <!-- up icon -->
       <!-- Bootstrap js -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+      <!-- iMask -->
+      <script src="https://unpkg.com/imask"></script>
+      <!-- custom js -->
       <script src="./js/app.js"></script>
     </div>
   </body>

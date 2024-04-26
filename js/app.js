@@ -25,13 +25,15 @@ statusBusiness = document.querySelector(".status__business");
 selection.addEventListener("click", () => {
   selection.classList.toggle("selection__active");
 
+  let month = 2,
+      year = month*10;
   buyValue.forEach((item) => {
     if (selection.classList.contains("selection__active")) {
       item.textContent = "Yil";
-      statusBusiness.textContent = "$10";
+      statusBusiness.textContent = `$${year}`;
     } else {
       item.textContent = "Oy";
-      statusBusiness.textContent = "$2";
+      statusBusiness.textContent = `$${month}`;
     }
   });
 });
@@ -49,8 +51,9 @@ window.addEventListener("scroll", () => {
   }
 
   // up icon
-  800 <  window.scrollY ? upIcon.style.opacity = "1" : upIcon.style.opacity = "0";
-
+  800 < window.scrollY
+    ? (upIcon.style.opacity = "1")
+    : (upIcon.style.opacity = "0");
 });
 
 // footer author year script
@@ -60,3 +63,13 @@ const yearTag = document.querySelector("#year");
 let year = date.getFullYear();
 yearTag.textContent = year;
 
+// input mask
+const telInput = document.querySelectorAll("#telInput");
+
+
+telInput.forEach((item) => {
+  const maskOptions = {
+    mask: '+{998}(00) 000-00-00'
+  };
+  const mask = IMask(item, maskOptions);
+})

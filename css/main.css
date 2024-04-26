@@ -775,8 +775,8 @@ header.sticky {
 }
 
 .price__selection.selection__active::after {
-  left: calc(100% - 28px);
-  animation: width 500ms linear alternate;
+  left: calc(100% - 24px);
+  animation: width 0.3s linear alternate;
 }
 
 .tariff__cards {
@@ -965,6 +965,12 @@ header.sticky {
 @media screen and (max-width: 900px) {
   .tariff__cards {
     grid-template-columns: repeat(1, 100%);
+    place-items: center;
+  }
+
+  .tariff__cards .cards__card
+  {
+    width: 60%;
   }
 
   .tariff__price__nav__title {
@@ -988,6 +994,7 @@ header.sticky {
 
   .tariff__price__nav__title {
     font-size: 18px;
+    text-align: center;
   }
 }
 
@@ -1002,6 +1009,28 @@ header.sticky {
 
   .buy__status {
     font-size: 28px;
+  }
+
+  .tariff__cards .cards__card
+  {
+    width: 100%;
+  }
+
+  .price__selection 
+  {
+    min-width: 50px;
+    height: 25px;
+  }
+
+  .price__selection::after
+  {
+    width: 20px;
+    height: 20px;
+  }
+
+  .buy__btn
+  {
+    padding: 14px 32px;
   }
 }
 
@@ -1039,6 +1068,25 @@ header.sticky {
 
   .card__body__menu_item {
     font-size: 12px;
+  }
+  .tariff__cards .cards__card
+  {
+    padding: 24px;
+  }
+  .buy__status
+  {
+    font-size: 18px;
+  }
+  .user__postion 
+  {
+    font-size: 12px;
+    margin-right: 24px;
+  }
+
+  .buy__btn
+  {
+    font-size: 14px;
+    padding: 14px 24px;
   }
 }
 
