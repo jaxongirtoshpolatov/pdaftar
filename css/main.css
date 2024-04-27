@@ -712,7 +712,7 @@ header.sticky {
   width: 20rem;
 }
 .debt {
-  margin-top: 10rem;
+  margin-top: 4rem;
 }
 .offline,
 .history {
@@ -2021,6 +2021,9 @@ header.sticky {
 .carousel-item {
   padding: 0 3rem;
 }
+.carousel__indicators{
+  display: none;
+}
 @media screen and (max-width: 1200px) {
   .debt__image > img {
     position: static;
@@ -2085,7 +2088,7 @@ header.sticky {
     margin-top: 16rem;
   }
   .debt {
-    margin-top: 16rem;
+    margin-top: 4rem;
   }
   .payments__data {
     display: flex;
@@ -2187,6 +2190,9 @@ header.sticky {
     margin: 12rem -2rem;
     text-align: center;
   }
+  .carousel__user {
+    padding: 15px;
+  }
 }
 @media screen and (max-width: 720px) {
   .intro__title {
@@ -2219,7 +2225,7 @@ header.sticky {
   }
 
   .debt__title {
-    font-size: 48px;
+    font-size: 36px;
   }
   .payment-box {
     padding: 5rem 2rem;
@@ -2265,6 +2271,12 @@ header.sticky {
   }
   .carousel__text {
     padding: 3rem;
+  }
+  .payments__right-info img {
+    width: 20rem;
+  }
+  .carousel__user {
+    padding: 12px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -2356,7 +2368,7 @@ header.sticky {
     margin: 4rem auto;
   }
   .payments__right-info img {
-    width: 20rem;
+    width: 18rem;
   }
   .carousel__text {
     padding: 2rem;
@@ -2367,12 +2379,28 @@ header.sticky {
   .carousel__img {
     width: 3rem;
   }
+  .carousel__user {
+    padding: 10px;
+  }
+  .carousel__h5{
+    font-size: 1rem;
+  }
+  .carousel__h6{
+    font-size: 0.7rem;
+  }
+  .carousel-item {
+    padding: 2px;
+  }
+  .carousel__indicators{
+    display: block;
+    position: static;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 360px) {
   .intro__title {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
- 
   .card__image {
     width: 6.5rem;
     height: auto;
@@ -2399,8 +2427,9 @@ header.sticky {
     font-size: 22px;
   }
   .debt__title {
-    font-size: 32px;
+    font-size: 24px;
   }
+  .payments__right-info
   .history__image-secondary img,
   .offline__image-secondary img {
     width: 7rem;
@@ -2430,11 +2459,7 @@ header.sticky {
     padding: 0;
   }
   .carousel-item {
-    padding: 0;
-  }
-  .carousel__all {
-    padding: 0;
-    margin: 0;
+    padding: 5px;
   }
   .intro__btn {
     font-size: 0.9rem;
@@ -2455,6 +2480,9 @@ header.sticky {
   }
   .carousel__text {
     padding: 1rem;
+  }
+  .carousel__user {
+    padding: 8px;
   }
 }
 /* ! footer */
@@ -2618,3 +2646,4 @@ footer .container {
     width: 10rem;
   }
 }
+.carousel-item
