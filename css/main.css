@@ -2704,20 +2704,3 @@ footer .container {
     width: 10rem;
   }
 }
-
-/* active input */
-.burn-out
-{
-  animation: burn-out 0.7s linear infinite alternate;
-}
-
-@keyframes burn-out {
-  0%
-  {
-    border-color: transparent;
-  }
-  100%
-  {
-    border-color: #563acc;
-  }
-}
