@@ -87,3 +87,6 @@ telInput.forEach((item) => {
   };
   const mask = IMask(item, maskOptions);
 });
+
+
+
