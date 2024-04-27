@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900;1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "Satoshi";
+  font-family: "Montserrat", sans-serif ;
 }
 
 a {
@@ -27,6 +27,17 @@ a {
 
 img {
   display: block;
+}
+
+h1,
+h2, 
+h3,
+div,
+button,
+p,
+.badge
+{
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .header__container {
@@ -202,7 +213,7 @@ header.sticky {
   }
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1090px) {
   .navbar__menu_box {
     flex-direction: column;
     visibility: hidden;
@@ -491,6 +502,7 @@ header.sticky {
   {
     width: 80%;
   }
+  
 }
 
 @media screen and (max-width: 1400px) {
@@ -528,6 +540,11 @@ header.sticky {
 
   .tab-pane img {
     width: 100%;
+  }
+  .footer-bottom
+  {
+    align-items: start;
+    flex-direction: column;
   }
 }
 
@@ -603,6 +620,7 @@ header.sticky {
   .tab-pane-content p {
     font-size: 14px;
   }
+  
 }
 
 /* Cards */
@@ -1734,15 +1752,16 @@ header.sticky {
   .kss-title {
     font-size: 34px;
   }
-  .kss-subtitle {
+  /* .kss-subtitle {
     font-size: 13px;
-  }
+  } */
   .kss-descr {
     font-size: 15px;
   }
 
   .kss-accordion {
     width: 100%;
+    margin-top: 49px;
   }
 
   .accordion-item {
@@ -1751,18 +1770,18 @@ header.sticky {
 }
 /* 800px */
 @media screen and (max-width: 800px) {
-  .kss-subtitle {
+  /* .kss-subtitle {
     font-size: 12px;
-  }
+  } */
   .kss-title {
     font-size: 31px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .kss-subtitle {
+  /* .kss-subtitle {
     font-size: 11px;
-  }
+  } */
   .kss-title {
     font-size: 28px;
   }
@@ -1771,9 +1790,9 @@ header.sticky {
   }
 
   @media screen and (max-width: 650px) {
-    .kss-subtitle {
+    /* .kss-subtitle {
       font-size: 10px;
-    }
+    } */
     .kss-title {
       font-size: 24px;
       font-weight: bold;
@@ -1854,7 +1873,7 @@ header.sticky {
 }
 
 .play-store h5 {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -1908,6 +1927,7 @@ header.sticky {
     align-items: center;
     justify-content: center;
     row-gap: 70px;
+    padding: 30px 20px;
   }
 
   .download .down-content {
@@ -1942,7 +1962,7 @@ header.sticky {
 
 @media screen and (max-width: 798px) {
   .down-content .title {
-    font-size: 34px;
+    font-size: 29px;
   }
 }
 
@@ -1959,7 +1979,7 @@ header.sticky {
     width: 100%;
   }
   .down-content .title {
-    font-size: 34px;
+    font-size: 29px;
   }
   .play-store h5 {
     font-size: 14px;
@@ -1967,17 +1987,22 @@ header.sticky {
   .play-store h6 {
     font-size: 8px;
   }
+  .down-link
+  {
+    flex-direction: column;
+    row-gap: 32px;
+  }
 }
 
 @media screen and (max-width: 421px) {
   .down-content .title {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
 @media screen and (max-width: 360px) {
   .down-content .title {
-    font-size: 30px;
+    font-size: 25px;
   }
   .down-link {
     flex-direction: column;
@@ -2548,6 +2573,7 @@ footer .container {
   border: none;
   background-color: transparent;
   font-size: 16px;
+  width: 50%;
   transition: all 0.25s linear;
   -webkit-transition: all 0.25s linear;
   -moz-transition: all 0.25s linear;
@@ -2570,7 +2596,7 @@ footer .container {
   background-color: #563acc;
   color: #fff;
   border: none;
-  width: 150px;
+  width: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2651,9 +2677,26 @@ footer .container {
   cursor: pointer;
 }
 /* ? mediaquiery */
-@media screen and (max-width: 1142px) {
-  .input-box {
-    min-width: 420px;
+@media screen and (max-width: 480px) {
+  form 
+  {
+    width: 100%;
+  }
+  .input-box
+  {
+    width: 100%;
+    min-width: unset;
+  }
+  .input-box input
+  {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .input-box button 
+  {
+    font-size: 13px;
+    width: 40%;
   }
 }
 @media screen and (max-width: 290px) {
@@ -2661,4 +2704,3 @@ footer .container {
     width: 10rem;
   }
 }
-.carousel-item
