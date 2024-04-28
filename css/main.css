@@ -852,11 +852,16 @@ header.sticky {
 
 .cards__card:hover .buy__btn
 {
-  background-color: #b69af1;
+  background-color: #563acc;
 }
 
 .cards__card.fade {
-  animation: fade 0.5s linear;
+  animation: fade 1s linear alternate;
+  opacity: 1;
+}
+
+.cards__card.fade-in {
+  animation: fade-in 1s linear alternate;
   opacity: 1;
 }
 
@@ -870,6 +875,18 @@ header.sticky {
     opacity: 1;
   }
 }
+
+@keyframes fade-in {
+  0%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+
 .buy__selection {
   width: 120px;
   height: 120px;
@@ -968,7 +985,7 @@ header.sticky {
 
 .buy__btn {
   border: none;
-  background-color: #d8c6ff;
+  background-color: #573accd1;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -982,6 +999,7 @@ header.sticky {
   -o-border-radius: 4px;
   margin-top: 48px;
   transition: background-color 0.3s ease;
+  color: #fff;
 }
 
 @media screen and (max-width: 1400px) {

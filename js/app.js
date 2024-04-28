@@ -45,7 +45,13 @@ card = document.querySelectorAll('.cards__card');
 selection.addEventListener("click", () => {
   selection.classList.toggle("selection__active");
   card.forEach((item) => {
-    (selection.classList.contains('selection__active')) ? item.classList.add('fade') : item.classList.remove('fade');
+    if(selection.classList.contains('selection__active')) {
+      item.classList.add('fade');
+      item.classList.remove('fade-in');
+    }else {
+      item.classList.add('fade-in');
+      item.classList.remove('fade');
+    }
   })
   let month = 2,
     year = month * 10;
