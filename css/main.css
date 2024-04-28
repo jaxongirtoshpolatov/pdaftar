@@ -74,7 +74,6 @@ p,
 header {
   position: relative;
   top: 48px;
-  transition: 0.8s;
 }
 
 .header__navbar {
