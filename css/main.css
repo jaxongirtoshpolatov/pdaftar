@@ -2693,7 +2693,7 @@ footer .container {
 @media screen and (max-width: 480px) {
   form 
   {
-    width: 90%;
+    width: 100%;
   }
   .input-box
   {
@@ -2715,5 +2715,9 @@ footer .container {
 @media screen and (max-width: 290px) {
   .payments__right-info img {
     width: 10rem;
+  }
+  .input-box input
+  {
+    font-size: 11px;
   }
 }
