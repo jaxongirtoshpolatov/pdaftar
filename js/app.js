@@ -88,5 +88,9 @@ telInput.forEach((item) => {
   const mask = IMask(item, maskOptions);
 });
 
-
+const inputTel = document.querySelector('#telInput');
+console.log(inputTel);
+inputTel.addEventListener('click', () => {
+  inputTel.parentElement.style.borderColor = 'rgb(86, 58, 204)'
+})
 

@@ -346,6 +346,7 @@ header.sticky {
 
 .tabs .container {
   text-align: center;
+  width: 100%;
 }
 
 .tabs-nav__title {
@@ -406,6 +407,7 @@ header.sticky {
   color: #3a3a3a;
   margin-left: 15px;
   cursor: pointer;
+  text-align: start;
 }
 
 /* vs line */
@@ -434,7 +436,7 @@ header.sticky {
 }
 /* tabs content */
 .tabs-tab {
-  margin-top: 112px;
+  margin-top: 80px;
 }
 
 .tab-content .tab-pane {
@@ -454,6 +456,7 @@ header.sticky {
   margin: 0 auto 37px auto;
   object-fit: cover;
   border-radius: 22px;
+  width: 100%;
   -webkit-border-radius: 22px;
   -moz-border-radius: 22px;
   -ms-border-radius: 22px;
@@ -546,6 +549,10 @@ header.sticky {
     align-items: start;
     flex-direction: column;
   }
+  .social 
+  {
+    margin-bottom: 32px;
+  }
 }
 
 @media screen and (max-width: 628px) {
@@ -606,7 +613,7 @@ header.sticky {
     -o-border-radius: 5px;
   }
   .tabs .nav p {
-    font-size: 14px;
+    font-size: 11px;
     text-align: start;
   }
   .vs-line__text {
@@ -1127,7 +1134,7 @@ header.sticky {
 
   .tariffs__container 
   {
-    padding: 45px 32px;
+    padding: 45px 20px;
   }
 
   .buy__btn
@@ -1682,6 +1689,12 @@ header.sticky {
   .payments__right-p,
   .payments__right-price {
     font-size: 10px;
+  }
+  /* tariff */
+  .user__postion
+  {
+    font-size: 10px;
+    margin-right: 16px;
   }
 }
 
@@ -2548,7 +2561,7 @@ footer .container {
   color: #1a1a1a;
   margin-bottom: 20px;
   text-align: center;
-  margin-bottom: 17px;
+  margin-bottom: 24px;
 }
 
 .input-box {
@@ -2680,7 +2693,7 @@ footer .container {
 @media screen and (max-width: 480px) {
   form 
   {
-    width: 100%;
+    width: 90%;
   }
   .input-box
   {
