@@ -413,6 +413,7 @@ header.sticky {
 /* vs line */
 .vs-line {
   position: relative;
+  width: 60%;
 }
 
 .vs-line__item {
@@ -436,7 +437,7 @@ header.sticky {
 }
 /* tabs content */
 .tabs-tab {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .tab-content .tab-pane {
@@ -489,7 +490,7 @@ header.sticky {
   }
   .vs-line {
     padding: 32px 0;
-    width: 70%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -500,13 +501,7 @@ header.sticky {
   }
 }
 
-@media screen and (max-width: 1090px) {
-  .vs-line
-  {
-    width: 80%;
-  }
-  
-}
+
 
 @media screen and (max-width: 1400px) {
   .container,
@@ -757,7 +752,7 @@ header.sticky {
 .tariffs__container {
   background: linear-gradient(to right, #ee98bf, #ffc071);
   margin-top: 148px;
-  padding: 64px;
+  padding: 72px 64px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -1001,7 +996,7 @@ header.sticky {
   }
   .vs-line
   {
-    width: 90%;
+    width: 70%;
   }
 }
 
@@ -1028,7 +1023,7 @@ header.sticky {
   }
 
   .tariffs__container {
-    padding: 32px;
+    padding: 64px 32px;
   }
 
   .tariff__nav__title {
@@ -1458,7 +1453,7 @@ header.sticky {
   }
   .vs-line
   {
-    width: 100%;
+    width: 90%;
   }
 }
 @media (max-width: 790px) {
@@ -2645,6 +2640,9 @@ footer .container {
 .social a {
   width: 40px;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social a:hover {
@@ -2708,7 +2706,7 @@ footer .container {
 @media screen and (max-width: 410px) {
   .input-box button 
   {
-    font-size: 13px;
+    font-size: 10px;
     width: 40%;
   }
 }
