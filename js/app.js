@@ -20,9 +20,9 @@ barsBtn.addEventListener("click", () => {
   header.classList.toggle("active");
   // logo white
   scrollFreeze(true);
-  if (!header.classList.contains("active")) {
-    scrollFreeze(false);
-  }
+  // if (!header.classList.contains("active")) {
+  //   scrollFreeze(false);
+  // }
 });
 
 navbarLink.forEach((item) => {
@@ -31,6 +31,7 @@ navbarLink.forEach((item) => {
       barsBtn.classList.remove("navbar__bars_active");
       navbarMenuBox.classList.remove("navbar__menu__box_active");
       header.classList.remove("active");
+      scrollFreeze(false);
     }
   });
 });
@@ -71,9 +72,9 @@ window.addEventListener("scroll", () => {
     : (upIcon.style.opacity = "0");
 });
 // check sticky navbar
-window.addEventListener("load", () => {
-  0 < window.scrollY ? navbar.classList.add('sticky') : navbar.classList.remove("sticky");
-})
+// window.addEventListener("load", () => {
+//   0 < window.scrollY ? navbar.classList.add('sticky') : navbar.classList.remove("sticky");
+// })
 
 
 // footer author year script
@@ -93,8 +94,9 @@ telInput.forEach((item) => {
   const mask = IMask(item, maskOptions);
 });
 
-const inputTel = document.querySelector("#telInput");
-console.log(inputTel);
-inputTel.addEventListener("click", () => {
-  inputTel.parentElement.style.borderColor = "rgb(86, 58, 204)";
-});
+const inputTel = document.querySelectorAll("#telInput");
+inputTel.forEach((tel) => {
+  tel.addEventListener("click", () => {
+    tel.parentElement.style.borderColor = "rgb(86, 58, 204)";
+  });
+})
