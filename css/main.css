@@ -105,7 +105,7 @@ header.sticky {
   column-gap: 48px;
   margin-right: 48px;
   position: relative;
-  transition: 10s ease;
+  transition: 0.5s ease;
 }
 
 .navbar__link {
@@ -846,14 +846,30 @@ header.sticky {
   color: #fff;
 }
 
-.buy__btn:hover {
-  background-color: #563acc;
-}
-
 .cards__card:hover .buy__selection__value {
   box-shadow: 0px 5px 10px rgba(225, 225, 225, 0.1);
 }
 
+.cards__card:hover .buy__btn
+{
+  background-color: #b69af1;
+}
+
+.cards__card.fade {
+  animation: fade 0.5s linear;
+  opacity: 1;
+}
+
+@keyframes fade {
+  0%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
 .buy__selection {
   width: 120px;
   height: 120px;
@@ -952,7 +968,7 @@ header.sticky {
 
 .buy__btn {
   border: none;
-  background-color: #45aaf2;
+  background-color: #d8c6ff;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -965,7 +981,7 @@ header.sticky {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   margin-top: 48px;
-  transition: background-color 0.5s;
+  transition: background-color 0.3s ease;
 }
 
 @media screen and (max-width: 1400px) {

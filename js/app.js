@@ -1,8 +1,9 @@
-let barsBtn, navbarMenuBox, navbarLink, header;
+let barsBtn, navbarMenuBox, navbarLink, header, logo;
 barsBtn = document.querySelector(".navbar__bars");
 navbarMenuBox = document.querySelector(".navbar__menu_box");
 navbarLink = document.querySelectorAll(".navbar__link");
 header = document.querySelector(".header__container");
+logo = header.querySelector(".nav__logo");
 
 // scroll freeze
 const scrollFreeze = (status) => {
@@ -17,6 +18,7 @@ barsBtn.addEventListener("click", () => {
   barsBtn.classList.toggle("navbar__bars_active");
   navbarMenuBox.classList.toggle("navbar__menu__box_active");
   header.classList.toggle("active");
+  // logo white
   scrollFreeze(true);
   if (!header.classList.contains("active")) {
     scrollFreeze(false);
@@ -28,6 +30,7 @@ navbarLink.forEach((item) => {
     if (barsBtn.classList.contains("navbar__bars_active")) {
       barsBtn.classList.remove("navbar__bars_active");
       navbarMenuBox.classList.remove("navbar__menu__box_active");
+      header.classList.remove("active");
     }
   });
 });
@@ -37,9 +40,12 @@ let selection, buyValue, statusBusiness;
 selection = document.querySelector(".price__selection");
 buyValue = document.querySelectorAll(".buy__selection__value");
 statusBusiness = document.querySelector(".status__business");
+card = document.querySelectorAll('.cards__card');
 selection.addEventListener("click", () => {
   selection.classList.toggle("selection__active");
-
+  card.forEach((item) => {
+    (selection.classList.contains('selection__active')) ? item.classList.add('fade') : item.classList.remove('fade');
+  })
   let month = 2,
     year = month * 10;
   buyValue.forEach((item) => {
@@ -58,18 +64,17 @@ let navbar = document.querySelector("header"),
   upIcon = document.querySelector(".up-icon a");
 
 window.addEventListener("scroll", () => {
-  let scrollValue = scrollY;
-  if (scrollValue > 0) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-
+  0 < window.scrollY ? navbar.classList.add('sticky') : navbar.classList.remove("sticky");
   // up icon
   800 < window.scrollY
     ? (upIcon.style.opacity = "1")
     : (upIcon.style.opacity = "0");
 });
+// check sticky navbar
+window.addEventListener("load", () => {
+  0 < window.scrollY ? navbar.classList.add('sticky') : navbar.classList.remove("sticky");
+})
+
 
 // footer author year script
 const date = new Date();
@@ -88,9 +93,8 @@ telInput.forEach((item) => {
   const mask = IMask(item, maskOptions);
 });
 
-const inputTel = document.querySelector('#telInput');
+const inputTel = document.querySelector("#telInput");
 console.log(inputTel);
-inputTel.addEventListener('click', () => {
-  inputTel.parentElement.style.borderColor = 'rgb(86, 58, 204)'
-})
-
+inputTel.addEventListener("click", () => {
+  inputTel.parentElement.style.borderColor = "rgb(86, 58, 204)";
+});
