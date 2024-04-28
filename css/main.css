@@ -74,7 +74,7 @@ p,
 header {
   position: relative;
   top: 48px;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .header__navbar {
@@ -106,7 +106,7 @@ header.sticky {
   column-gap: 48px;
   margin-right: 48px;
   position: relative;
-  transition: 0.5s ease;
+  transition: 10s ease;
 }
 
 .navbar__link {
