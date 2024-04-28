@@ -93,16 +93,15 @@ yearTag.textContent = year;
 // input mask
 const telInput = document.querySelectorAll("#telInput");
 
-telInput.forEach((item) => {
+telInput.forEach((maskInput) => {
   const maskOptions = {
     mask: "+{998}(00) 000-00-00",
   };
-  const mask = IMask(item, maskOptions);
+  const mask = IMask(maskInput, maskOptions);
+
+  maskInput.addEventListener("click", () => {
+    maskInput.parentElement.style.borderColor = "rgb(86, 58, 204)";
+  });
 });
 
-const inputTel = document.querySelectorAll("#telInput");
-inputTel.forEach((tel) => {
-  tel.addEventListener("click", () => {
-    tel.parentElement.style.borderColor = "rgb(86, 58, 204)";
-  });
-})
+
