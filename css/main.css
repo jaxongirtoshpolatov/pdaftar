@@ -413,7 +413,7 @@ header.sticky {
 /* vs line */
 .vs-line {
   position: relative;
-  width: 60%;
+  height: 60%;
 }
 
 .vs-line__item {
@@ -490,13 +490,12 @@ header.sticky {
   }
   .vs-line {
     padding: 32px 0;
-    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 60%;
   }
   .vs-line__item {
-    width: 60%;
     height: 2px;
   }
 }
