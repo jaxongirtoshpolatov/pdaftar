@@ -20,9 +20,9 @@ barsBtn.addEventListener("click", () => {
   header.classList.toggle("active");
   // logo white
   scrollFreeze(true);
-  // if (!header.classList.contains("active")) {
-  //   scrollFreeze(false);
-  // }
+  if (!header.classList.contains("active")) {
+    scrollFreeze(false);
+  }
 });
 
 navbarLink.forEach((item) => {
@@ -78,9 +78,9 @@ window.addEventListener("scroll", () => {
     : (upIcon.style.opacity = "0");
 });
 // check sticky navbar
-// window.addEventListener("load", () => {
-//   0 < window.scrollY ? navbar.classList.add('sticky') : navbar.classList.remove("sticky");
-// })
+window.addEventListener("load", () => {
+  0 < window.scrollY ? navbar.classList.add('sticky') : navbar.classList.remove("sticky");
+})
 
 
 // footer author year script
