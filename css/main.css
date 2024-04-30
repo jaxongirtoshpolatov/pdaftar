@@ -694,7 +694,7 @@ header.sticky {
 .payment-box {
   width: 100%;
   position: relative;
-  padding: 194px 62px;
+  padding: 168px 62px;
   margin: 10rem 0;
   background-color: #f8e7df;
   border-radius: 20px;
@@ -705,18 +705,25 @@ header.sticky {
 }
 .debt__image > img {
   position: absolute;
-  top: -5rem;
+  top: -50px;
   right: 3rem;
 }
 .history__image-first {
   position: absolute;
-  top: -4rem;
+  top: -44px;
   left: 3rem;
 }
 .history__image-secondary {
   position: relative;
   z-index: 2;
   left: 11rem;
+}
+.history__image-secondary img{
+  border-radius:10px;
+  box-shadow: 0 0 6px #f2f2f2;
+}
+.history__image-secondary img:nth-of-type(2){
+  margin-top: 2px;
 }
 .history__box {
   background-color: #eef2fb;
@@ -726,7 +733,7 @@ header.sticky {
   position: absolute;
 }
 .offline__image-first {
-  top: -4rem;
+  top: -54px;
   right: -13rem;
 }
 .offline__image-secondary {
