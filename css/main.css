@@ -115,6 +115,9 @@ header.sticky {
   font-weight: 400;
   position: relative;
 }
+.navbar__link img{
+  padding-right: 5px;
+}
 
 .navbar__menu .navbar__link::after {
   position: absolute;
