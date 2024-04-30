@@ -2128,7 +2128,7 @@ header.sticky {
   margin-top: 8px;
 }
 .carousel__boxs{
-  margin-bottom: 5rem;
+  margin: 8rem auto;
 }
 @media screen and (max-width: 1200px) {
   .debt__image > img {
@@ -2220,6 +2220,9 @@ header.sticky {
   .debt__box{
     margin-top: 3rem;
   }
+  .carousel__boxs{
+    margin: 7rem auto;
+  }
 }
 @media screen and (max-width: 960px) {
   .intro__title {
@@ -2304,6 +2307,9 @@ header.sticky {
   .debt__box{
     margin-top: 2.5rem;
   }
+  .carousel__boxs{
+    margin: 6rem auto;
+  }
 }
 @media screen and (max-width: 720px) {
   .carousel__boxs{
@@ -2321,6 +2327,10 @@ header.sticky {
   .card__image {
     width: 9rem;
     height: auto;
+  }
+  .card__image-one{
+    height: 133.13px;
+    object-fit: contain;
   }
   .phone {
     margin-top: 5rem;
@@ -2374,6 +2384,7 @@ header.sticky {
   }
   .carousel__title-h1 {
     font-size: 1.5rem;
+    margin: 0.5rem auto;
   }
   .payment-box {
     margin-top: 6rem;
@@ -2394,6 +2405,9 @@ header.sticky {
   }
   .debt__box{
     margin-top: 2rem;
+  }
+  .carousel__boxs{
+    margin: 5rem auto;
   }
 }
 @media screen and (max-width: 576px) {
@@ -2430,7 +2444,7 @@ header.sticky {
     width: 7rem;
   }
   .phone {
-    margin-top: 36px;
+    margin-top: 56px;
   }
   .cards__text {
     width: 17.5rem;
@@ -2520,6 +2534,10 @@ header.sticky {
     text-align: center;
     
   }
+  .carousel__boxs{
+    margin: 4rem auto;
+  }
+  
 }
 @media screen and (max-width: 360px) {
   .intro__title {
@@ -2536,7 +2554,7 @@ header.sticky {
     width: 6rem;
   }
   .phone {
-    margin-top: 10px;
+    margin-top: 42px;
   }
   .cards__text {
     width: 17.5rem;
@@ -2606,6 +2624,9 @@ header.sticky {
   }
   .carousel__user {
     padding: 8px;
+  }
+  .carousel__boxs{
+    margin: 2rem auto;
   }
 }
 /* ! footer */
@@ -2794,4 +2815,3 @@ footer .container {
     font-size: 11px;
   }
 }
-intro {
