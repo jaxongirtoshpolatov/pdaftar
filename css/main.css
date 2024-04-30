@@ -2136,6 +2136,7 @@ header.sticky {
 }
 .carousel__boxs{
   margin-bottom: 5rem;
+  margin-top: 90px;
 }
 @media screen and (max-width: 1200px) {
   .debt__image > img {
@@ -2322,7 +2323,8 @@ header.sticky {
 }
 @media screen and (max-width: 720px) {
   .carousel__boxs{
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    margin-top: 76px;
   }
   .intro__title {
     font-size: 32px;
@@ -2334,8 +2336,8 @@ header.sticky {
     gap: 12px;
   }
   .card__image {
-    width: 9rem;
-    height: auto;
+    height:133.13px;
+    object-fit: contain;
   }
   .phone {
     margin-top: 5rem;
@@ -2449,7 +2451,7 @@ header.sticky {
     width: 7rem;
   }
   .phone {
-    margin-top: 36px;
+    margin-top: 76px;
   }
   .cards__text {
     width: 17.5rem;
@@ -2559,7 +2561,7 @@ header.sticky {
     width: 6rem;
   }
   .phone {
-    margin-top: 10px;
+    margin-top: 60px;
   }
   .cards__text {
     width: 17.5rem;
