@@ -2215,9 +2215,7 @@ header.sticky {
   .intro__title {
     font-size: 36px;
   }
-  .intro {
-    margin: 10rem 1rem;
-  }
+  
   .image-phone {
     width: 12rem;
   }
@@ -2786,3 +2784,4 @@ footer .container {
     font-size: 11px;
   }
 }
+intro {
