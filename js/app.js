@@ -20,9 +20,9 @@ barsBtn.addEventListener("click", () => {
   header.classList.toggle("active");
   // logo white
   scrollFreeze(true);
-  // if (!header.classList.contains("active")) {
-  //   scrollFreeze(false);
-  // }
+  if (!header.classList.contains("active")) {
+    scrollFreeze(false);
+  }
 });
 
 navbarLink.forEach((item) => {
