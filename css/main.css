@@ -302,7 +302,6 @@ header.sticky {
   border: solid 0.5px rgb(86, 58, 204);
 }
 .intro__input {
-  font-family: Satoshi;
   border-style: none;
   border-radius: 35px;
   outline-style: none;
@@ -1973,8 +1972,8 @@ header.sticky {
 
 .down-img img:first-child {
   position: absolute;
-  top: -16px;
-  right: 173px;
+  top: -48px;
+  right: 192px;
 }
 /* ? mediaquery */
 @media screen and (max-width: 1270px) {
@@ -1994,7 +1993,7 @@ header.sticky {
     align-items: center;
     justify-content: center;
     row-gap: 70px;
-    padding: 30px 20px;
+    /* padding: 30px 20px; */
   }
 
   .download .down-content {

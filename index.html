@@ -44,6 +44,16 @@
     </script>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8DSJC1Z1Y5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8DSJC1Z1Y5');
+</script>
+
   <body>
     <!-- wrapper -->
     <div class="wrapper">
@@ -195,8 +205,9 @@
                   type="tel"
                   id="telInput"
                   name="header-phone"
-                  placeholder="+998-99-123-45-67"
+                  placeholder="+998(99) 123-45-67"
                   autocomplete="off"
+                  pattern="^\+998\(\d{2}\)\s\d{3}-\d{2}-\d{2}$"
                 />
                 <button
                   class="intro__btn text-white col-sm-5"
@@ -853,7 +864,7 @@
           </div>
           <div class="down-img">
             <img src="./img/message-notification.svg" alt="message-notification" />
-            <img src="./img/project-images/webp/7-big.png" alt="tab-element-img1" />
+            <img src="./img/project-images/webp/8.png" alt="tab-element-img1" />
           </div>
         </div>
       </section>
